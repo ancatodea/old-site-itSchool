@@ -1,0 +1,30 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1.4fr 2fr 0.5fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 20px;
+  grid-auto-flow: column;
+  grid-template-areas:
+    "header header header"
+    "section-title section-title section-title"
+    "section-trainers- section-trainers- section-trainers-"
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.section-title {
+  grid-area: section-title;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.section-trainers- {
+  grid-area: section-trainers-;
+}
