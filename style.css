@@ -1,3 +1,34 @@
+:root {
+  --background-primary: #141e4c;
+  --background-secondary: #dfedf5;
+  --background-dark: #101d42;
+  --background-light: #ffffff;
+  --text-primary: #101d42;
+  --text-secondary: #fbb44c;
+  --text-dark: #2b2922;
+  --text-light: #eaeaea;
+  --text-white: #ffffff;
+  --button-color: #2bb686;
+  /* --fs-large: 1rem;
+  --fs-medium: 0.875rem;
+  --fs-small: 0.75rem;
+  --spacing-xl: 2.625rem;
+  --spacing-large: 1.75rem;
+  --spacing-medium: 1rem;
+  --spacing-small: 0.5rem;
+  --spacing-tiny: 0.25rem; */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
+  display: flex;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -17,35 +48,106 @@
 
 .header {
   grid-area: header;
-  background-color: #141e4c;
-  color: antiquewhite;
+  background-color: var(--background-primary);
+}
+nav img {
+  width: auto;
+  height: 60px;
+}
+nav {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-nav {
+.container-nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  background-color: var(--background-primary);
+}
+
+.pages a:hover {
+  color: var(--text-secondary);
+}
+
+.pages a {
+  color: var(--text-light);
+  text-decoration: none;
 }
 
 .pages {
   display: flex;
-}
-
-nav li {
-  
+  list-style: none;
 }
 
 .section-title {
+  height: 100vh;
+  width: 100%;
   grid-area: section-title;
   background-color: #141e4c;
+  color: var(--background-light);
+}
+
+.section-title img {
+  height: 24px;
+  width: auto;
 }
 
 .section-calendar {
   grid-area: section-calendar;
 }
 
+.container-calendar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: column;
+  grid-template-areas:
+    "curs-python curs-web-development curs-introducere-IT"
+    "curs-programare-C curs-programare-java curs-graphic-design";
+}
+
+.curs-python {
+  grid-area: curs-python;
+}
+
+.curs-web-development {
+  grid-area: curs-web-development;
+}
+
+.curs-introducere-IT {
+  grid-area: curs-introducere-IT;
+}
+
+.curs-programare-C {
+  grid-area: curs-programare-C;
+}
+
+.curs-programare-java {
+  grid-area: curs-programare-java;
+}
+
+.curs-graphic-design {
+  grid-area: curs-graphic-design;
+}
+
 .section-images {
   grid-area: section-images;
+  background-color: var(--background-secondary);
+}
+
+.container-images {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.images-wrapper {
+  width: calc(100% / 3);
 }
 
 .section-parteners {
@@ -55,4 +157,13 @@ nav li {
 .footer {
   grid-area: footer;
   background-color: #141e4c;
+  color: var(--text-light);
+}
+
+.container-parteners img {
+  filter: grayscale(100%);
+}
+
+.container-parteners img:hover {
+  filter: grayscale(0%);
 }
