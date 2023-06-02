@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --background-primary: #141e4c;
   --background-secondary: #dfedf5;
   --background-dark: #101d42;
@@ -9,14 +9,14 @@
   --text-light: #eaeaea;
   --text-white: #ffffff;
   --button-color: #2bb686;
-  /* --fs-large: 1rem;
+  --fs-large: 1rem;
   --fs-medium: 0.875rem;
   --fs-small: 0.75rem;
   --spacing-xl: 2.625rem;
   --spacing-large: 1.75rem;
   --spacing-medium: 1rem;
   --spacing-small: 0.5rem;
-  --spacing-tiny: 0.25rem; */
+  --spacing-tiny: 0.25rem;
 }
 
 * {
@@ -29,25 +29,7 @@ body {
   display: flex;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1.5fr 1.1fr 2.3fr 1.7fr 0.7fr;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  gap: 0px 20px;
-  grid-auto-flow: column;
-  grid-template-areas:
-    "header header header"
-    "section-title section-title section-title"
-    "section-calendar section-calendar section-calendar"
-    "section-images section-images section-images"
-    "section-parteners section-parteners section-parteners"
-    "footer footer footer";
-}
-
 .header {
-  grid-area: header;
   background-color: var(--background-primary);
 }
 nav img {
@@ -94,70 +76,34 @@ nav {
   width: auto;
 }
 
-.section-calendar {
-  grid-area: section-calendar;
-}
-
-.container-calendar {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: 1fr;
-  gap: 20px 20px;
-  grid-auto-flow: column;
-  grid-template-areas:
-    "curs-python curs-web-development curs-introducere-IT"
-    "curs-programare-C curs-programare-java curs-graphic-design";
-}
-
-.curs-python {
-  grid-area: curs-python;
-}
-
-.curs-web-development {
-  grid-area: curs-web-development;
-}
-
-.curs-introducere-IT {
-  grid-area: curs-introducere-IT;
-}
-
-.curs-programare-C {
-  grid-area: curs-programare-C;
-}
-
-.curs-programare-java {
-  grid-area: curs-programare-java;
-}
-
-.curs-graphic-design {
-  grid-area: curs-graphic-design;
-}
-
 .section-images {
-  grid-area: section-images;
   background-color: var(--background-secondary);
 }
 
 .container-images {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+  padding: var(--spacing-medium);
+  justify-content: space-around;
+  margin: 0 var(--spacing-xl);
 
 }
-
-.images-wrapper {
-  width: calc(100% / 3);
-}
-
-.section-parteners {
-  grid-area: section-parteners;
-}
-
-.footer {
-  grid-area: footer;
+footer {
   background-color: #141e4c;
   color: var(--text-light);
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+  padding: var(--spacing-medium);
+}
+.container-parteners {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+  padding: var(--spacing-medium);
 }
 
 .container-parteners img {
@@ -166,4 +112,4 @@ nav {
 
 .container-parteners img:hover {
   filter: grayscale(0%);
-}
+} */
