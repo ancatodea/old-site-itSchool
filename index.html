@@ -8,6 +8,8 @@
 
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&amp;display=swap"
+    rel="stylesheet">
 </head>
 <body>
   <nav>
@@ -17,164 +19,226 @@
           <img src="./assets/itschool-logo.png" alt="Logo IT School">
         </div>
       </a>
-      <ul class="pages">
-        <li>
-          <a href="./pages/courses.html">Cursuri online</a>
-        </li>
-        <li>
-          <a href="./pages/about.html">Despre noi</a>
-        </li>
-        <li>
-          <a href="./pages/contact.html">Contact</a>
-        </li>
-      </ul>
+      <div class="pages-container">
+        <ul class="pages">
+          <li>
+            <a href="./pages/courses.html">Cursuri online</a>
+          </li>
+          <li class="about">
+            <a href="./pages/about.html">Despre noi
+              <span class="material-icons"> arrow_drop_down</span>
+            </a>
+            <div class="drop-down-menu">
+              <a href="index.html">IT School</a>
+              <a href="./pages/about.html">Despre Noi</a>
+            </div>
+          </li>
+          <li>
+            <a href="./pages/contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
   <main>
-    <div class="container">
+    <div class="container-main">
+      <div class="container-title">
       <div class="section-title">
-        <div class="container-title">
-          <h1>Bine ai venit!</h1>
-          <p>Accelerator de cariere in <span>{</span> web development <span>}</span></p>
-          <p>
-            Cursuri IT pentru incepatori cu certificare
-            <img src="./assets/microsoft.png" alt="Microsoft logo">
-            <img src="./assets/adobe.png" alt="Adobe logo">
-            <img src="./assets/apple.png" alt="Apple logo">
-            <img src="./assets/minister.png" alt="Minister logo">
-          </p>
-          <a href="./pages/courses.html">
-            <button>Afla mai multe</button>
-          </a>
-        </div>
+        <h1>Bine ai venit!</h1>
+        <p>Accelerator de cariere in <span>{</span> web development <span>}</span></p>
+        <p>
+          Cursuri IT pentru incepatori cu certificare
+          <img src="./assets/microsoft.png" alt="Microsoft logo">
+          <img src="./assets/adobe.png" alt="Adobe logo">
+          <img src="./assets/apple.png" alt="Apple logo">
+          <img src="./assets/minister.png" alt="Minister logo">
+        </p>
+        <a href="./pages/courses.html">
+          AFLA MAI MULTE
+        </a>
+      </div>
       </div>
       <div class="section-calendar">
-        <h2>Calendar cursuri</h2>
-        <div class="container-calendar">
-          <div class="curs-python">
-            <h3>Python</h3>
-            <div class="badges">
-              <span class="material-icons"> today </span>
-              <span>In curand</span>
-              <span class="material-icons">location_on</span>
-              <span>Online</span>
+        <div class="container-calendar grid">
+          <h2>Calendar cursuri</h2>
+          <div class="container-courses">
+            <div class="course-wrapper">
+              <div class="course">
+                <div class="content">
+                  <h3>Python</h3>
+                  <div class="badges">
+                    <span class="date">
+                      <span class="material-icons"> today </span>
+                      <span>In curand</span>
+                    </span>
+                    <span class="place">
+                      <span class="material-icons">location_on</span>
+                      <span>Online</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="bar"></div>
+              </div>
             </div>
-            <div class="bar"></div>
-          </div>
-          <div class="curs-web-development">
-            <h3>Web Development</h3>
-            <div class="badges">
-              <span class="material-icons"> today </span>
-              <span>In curand</span>
-              <span class="material-icons">location_on</span>
-              <span>Online</span>
+            <div class="course-wrapper">
+              <div class="course">
+                <div class="content">
+                  <h3>Web Development</h3>
+                  <div class="badges">
+                    <span class="date">
+                      <span class="material-icons"> today </span>
+                      <span>In curand</span>
+                    </span>
+                    <span class="place">
+                      <span class="material-icons">location_on</span>
+                      <span>Online</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="bar"></div>
+              </div>
             </div>
-            <div class="bar"></div>
-          </div>
-          <div class="curs-introducere-IT">
-            <h3>Introducere in IT</h3>
-            <div class="badges">
-              <span class="material-icons"> today </span>
-              <span>In curand</span>
-              <span class="material-icons">location_on</span>
-              <span>Online</span>
+            <div class="course-wrapper">
+              <div class="course">
+                <div class="content">
+                  <h3>Introducere in IT</h3>
+                  <div class="badges">
+                    <span class="date">
+                      <span class="material-icons"> today </span>
+                      <span>In curand</span>
+                    </span>
+                    <span class="place">
+                      <span class="material-icons">location_on</span>
+                      <span>Online</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="bar"></div>
+              </div>
             </div>
-            <div class="bar"></div>
-          </div>
-          <div class="curs-programare-C">
-            <h3>Programare C++</h3>
-            <div class="badges">
-              <span class="material-icons"> today </span>
-              <span>In curand</span>
-              <span class="material-icons">location_on</span>
-              <span>Online</span>
+            <div class="course-wrapper">
+              <div class="course">
+                <div class="content">
+                  <h3>Programare C++</h3>
+                  <div class="badges">
+                    <span class="date">
+                      <span class="material-icons"> today </span>
+                      <span>In curand</span>
+                    </span>
+                    <span class="place">
+                      <span class="material-icons">location_on</span>
+                      <span>Online</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="bar"></div>
+              </div>
             </div>
-            <div class="bar"></div>
-          </div>
-          <div class="curs-programare-java">
-            <h3>Programare Java</h3>
-            <div class="badges">
-              <span class="material-icons"> today </span>
-              <span>In curand</span>
-              <span class="material-icons">location_on</span>
-              <span>Online</span>
+            <div class="course-wrapper">
+              <div class="course">
+                <div class="content">
+                  <h3>Programare Java</h3>
+                  <div class="badges">
+                    <span class="date">
+                      <span class="material-icons"> today </span>
+                      <span>In curand</span>
+                    </span>
+                    <span class="place">
+                      <span class="material-icons">location_on</span>
+                      <span>Online</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="bar"></div>
+              </div>
             </div>
-            <div class="bar"></div>
-          </div>
-          <div class="curs-graphic-design">
-            <h3>Graphic Design</h3>
-            <div class="badges">
-              <span class="material-icons"> today </span>
-              <span>In curand</span>
-              <span class="material-icons">location_on</span>
-              <span>Online</span>
+            <div class="course-wrapper">
+              <div class="course">
+                <div class="content">
+                  <h3>Graphic Design</h3>
+                  <div class="badges">
+                    <span class="date">
+                      <span class="material-icons"> today </span>
+                      <span>In curand</span>
+                    </span>
+                    <span class="place">
+                      <span class="material-icons">location_on</span>
+                      <span>Online</span>
+                    </span>
+                  </div>
+                </div>
+                <div class="bar"></div>
+              </div>
             </div>
-            <div class="bar"></div>
           </div>
         </div>
       </div>
       <div class="section-images">
-        <h2>Ce este IT School?</h2>
-        <p>IT School este o comunitate educațională de IT, locul unde pasionații acestui domeniu se întâlnesc cu viitorii
-          profesioniști. Timp de peste 7 ani, am construit alături de trainerii IT School un mediu de învățare specializat
-          pentru
-          toți cei care își doresc să descopere oportunitățile acestui domeniu. Ești pregătit să faci parte din comunitatea
-          IT
-          School?
-        </p>
-        <div class="container-images">
-          <div class="image-wrapper">
-            <img src="./assets/about-us-1.jpeg" alt="Students picture">
-          </div>
-          <div class="image-wrapper">
-            <img src="./assets/about-us-2.jpeg" alt="Students picture">
-          </div>
-          <div class="image-wrapper">
-            <img src="./assets/about-us-3.jpeg" alt="Students picture">
-          </div>
-          <div class="image-wrapper">
-            <img src="./assets/about-us-4.jpeg" alt="Students picture">
-          </div>
-          <div class="image-wrapper">
-            <img src="./assets/about-us-5.jpeg" alt="Students picture">
-          </div>
-          <div class="image-wrapper">
-            <img src="./assets/about-us-6.jpeg" alt="Students picture">
+        <div class="container-images grid">
+          <h2>Ce este IT School?</h2>
+          <p>IT School este o comunitate educațională de IT, locul unde pasionații acestui domeniu se întâlnesc cu viitorii
+            profesioniști. Timp de peste 7 ani, am construit alături de trainerii IT School un mediu de învățare specializat
+            pentru
+            toți cei care își doresc să descopere oportunitățile acestui domeniu. Ești pregătit să faci parte din comunitatea
+            IT
+            School?
+          </p>
+          <div class="images">
+            <div class="image-wrapper">
+              <img src="./assets/about-us-1.jpeg" alt="Students picture">
+            </div>
+            <div class="image-wrapper">
+              <img src="./assets/about-us-2.jpeg" alt="Students picture">
+            </div>
+            <div class="image-wrapper">
+              <img src="./assets/about-us-3.jpeg" alt="Students picture">
+            </div>
+            <div class="image-wrapper">
+              <img src="./assets/about-us-4.jpeg" alt="Students picture">
+            </div>
+            <div class="image-wrapper">
+              <img src="./assets/about-us-5.jpeg" alt="Students picture">
+            </div>
+            <div class="image-wrapper">
+              <img src="./assets/about-us-6.jpeg" alt="Students picture">
+            </div>
           </div>
         </div>
       </div>
       <div class="section-parteners">
-        <h2>Parteneri</h2>
         <div class="container-parteners">
-          <div class="image-wrapper">
-            <img src="./assets/partener-toluna.png" alt="Toluna">
-          </div>
-          <div class="image-wrapper">
-            <img src="./assets/partener-123formbuilder.png" alt="123 Form Builder">
-          </div>
-          <div class="image-wrapper">
-            <img src="./assets/partener-nagarro.png" alt="Nagarro">
-          </div>
-          <div class="image-wrapper">
-            <img src="./assets/partener-cognizant.png" alt="Cognizant Softvision">
-          </div>
-          <div class="image-wrapper">
-            <img src="./assets/partener-dreamproduction.png" alt="Dream Production">
-          </div>
-          <div class="image-wrapper">
-            <img src="./assets/partener-ness.png" alt="Ness">
-          </div>
-          <div class="image-wrapper">
-            <img src="./assets/partener-instapage.png" alt="Instapage">
-          </div>
-          <div class="image-wrapper">
-            <img src="./assets/partener-amdaris.png" alt="Amdaris">
-          </div>
-          <div class="image-wrapper">
-            <img src="./assets/partener-fortech.png" alt="Fortech">
-          </div>
-          <div class="image-wrapper">
-            <img src="./assets/partener-visma.png" alt="Visma">
+          <h2>Parteneri</h2>
+          <div class="container-partener">
+            <div class="image-wrapper">
+              <img src="./assets/partener-toluna.png" alt="Toluna">
+            </div>
+            <div class="image-wrapper">
+              <img src="./assets/partener-123formbuilder.png" alt="123 Form Builder">
+            </div>
+            <div class="image-wrapper">
+              <img src="./assets/partener-nagarro.png" alt="Nagarro">
+            </div>
+            <div class="image-wrapper">
+              <img src="./assets/partener-cognizant.png" alt="Cognizant Softvision">
+            </div>
+            <div class="image-wrapper">
+              <img src="./assets/partener-dreamproduction.png" alt="Dream Production">
+            </div>
+            <div class="image-wrapper">
+              <img src="./assets/partener-ness.png" alt="Ness">
+            </div>
+            <div class="image-wrapper">
+              <img src="./assets/partener-instapage.png" alt="Instapage">
+            </div>
+            <div class="image-wrapper">
+              <img src="./assets/partener-amdaris.png" alt="Amdaris">
+            </div>
+            <div class="image-wrapper">
+              <img src="./assets/partener-fortech.png" alt="Fortech">
+            </div>
+            <div class="image-wrapper">
+              <img src="./assets/partener-visma.png" alt="Visma">
+            </div>
           </div>
         </div>
       </div>
