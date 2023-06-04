@@ -114,6 +114,105 @@ nav .about:hover .drop-down-menu {
   font-size: 3.5rem;
 }
 
+/* Courses section stilying */
+
+.courses-description {
+  padding: var(--spacing-medium) var(--spacing-small);
+  max-width: 1200px;
+  min-width: 320px;
+  margin: auto;
+  color: var(--text-primary);
+}
+
+.courses-description h2 {
+  text-align: center;
+  font-size: 1.75rem;
+  margin: var(--spacing-large) 0;
+}
+
+.courses-description .main-paragraph {
+  text-align: center;
+  margin-left: var(--spacing-small);
+  margin-right: var(--spacing-small);
+  margin-bottom: var(--spacing-large);
+  font-size: var(--fs-medium);
+  color: var(--text-dark);
+}
+
+.courses-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-large);
+}
+
+.course-wrapper {
+  width: calc(100% / 3);
+  padding-right: var(--spacing-small);
+  padding-left: var(--spacing-small);
+}
+
+.course {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: var(--spacing-tiny);
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+  margin-bottom: var(--spacing-large);
+}
+
+.content, .duration-months, .duration-hours {
+  margin-left: var(--spacing-small);
+}
+
+.content h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-medium);
+}
+
+.courses-description .certification  {
+  color: #666;
+  font-size: var(--fs-medium);
+}
+
+.certification  .microsoft-logo {
+  width: 80px;
+  height: auto;
+  vertical-align: text-top;
+  margin-left: var(--spacing-small);
+}
+
+.details {
+  margin-bottom: var(--spacing-medium);
+}
+
+.details span {
+  font-size: var(--fs-medium);
+  color: #666;
+}
+
+.details .material-icons {
+  vertical-align: middle;
+}
+
+.content a {
+  font-size: var(--fs-medium);
+  text-align: center;
+  color: var(--text-white);
+  background-color: var(--button-color);
+  border: 1px solid var(--button-color);
+  border-radius: 5px;
+  padding: var(--spacing-tiny);
+  width: 100px;
+  margin-bottom: var(--spacing-medium);
+  display: block;
+  text-decoration: none;
+}
+
+
 /* Footer section styling  */
 
 footer {
