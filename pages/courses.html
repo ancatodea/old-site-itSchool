@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cusrsuri</title>
+  <title>Cursuri</title>
 
   <link rel="stylesheet" href="../styling/courses.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -13,22 +13,30 @@
 </head>
 <body>
   <nav>
-    <a href="../index.html">
-      <div class="logo">
-        <img src="/assets/itschool-logo.png" alt="Logo IT School">
-      </div>
-    </a>
-    <ul class="pages">
-      <li>
-        <a href="./courses.html">Cursuri online</a>
-      </li>
-      <li>
-        <a href="./about.html">Despre noi</a>
-      </li>
-      <li>
-        <a href="./contact.html">Contact</a>
-      </li>
-    </ul>
+    <div class="container-nav">
+      <a href="../index.html">
+        <div class="logo">
+          <img src="/assets/itschool-logo.png" alt="Logo IT School">
+        </div>
+      </a>
+      <ul class="pages">
+        <li>
+          <a href="./courses.html">Cursuri online</a>
+        </li>
+        <li class="about">
+          <a href="/pages/about.html">Despre noi
+            <span class="material-icons"> arrow_drop_down</span>
+          </a>
+          <div class="drop-down-menu">
+            <a href="/index.html">IT School</a>
+            <a href="/pages/about.html">Despre Noi</a>
+          </div>
+        </li>
+        <li>
+          <a href="./contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
   </nav>
   <main>
     <div class="container">
